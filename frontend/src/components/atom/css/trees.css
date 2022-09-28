@@ -1,0 +1,8 @@
+.linkMeter {
+    padding: 2px 0px;
+    color:#fff;
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+}
+.linkMeter:focus{color: #34495e;}
