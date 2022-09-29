@@ -9,7 +9,7 @@ import AppBarPm from 'components/molecule/AppBar';
 function App() {  
     const drawerWidth = 240;
 
-    return(
+    return(<>
   
         <Box sx={{ display: 'flex' }}>
             <CssBaseline /> 
@@ -21,8 +21,11 @@ function App() {
                 <Outlet />
             </Box>
         </Box>
+        <Box sx={{ marginTop: "40px", textAlign: "center" }}>
+            <h5> Desarrollado por Recalde Claudio </h5>
+        </Box>
   
-    )
+    </>)
 }
 
 export default App;

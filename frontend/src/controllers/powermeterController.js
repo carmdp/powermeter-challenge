@@ -1,22 +1,31 @@
-import instanceApi from '../config/Axios';
+import tree from '../data/tree.json';
+import measurements from '../data/measurements.json'; 
     
 
 export const GetTreeCompany = async () => {
   try {
-    let rta = instanceApi.get('/measurers/').then((res) => console.log(res.data));
-
-     return  instanceApi.get('/demo/hierarchy/tree/').then((res) => res.data);
+    return tree;
    } catch (error) {
      console.error(error.message)
    }    
  };
 
  
-export const GetMeasurerById= async (params) => {
+export const GetMeasurerById= async (id) => {
   try {
-      return instanceApi.get(`/demo/meters/power/instant/?filter=${params}`).then((res) => res.data);
+    return measurements.filter((measurement) => measurement.node.id === parseInt(id));
   } catch (error) {
       console.error(error.message)
   }    
 };
  
+
+export const GetMeasurements = (id) => {
+  try {
+   
+    return  measurements.filter((measurement) => measurement.medidores.some( (elem) => elem.id === parseInt(id)))[0].medidores.filter(elem => elem.id === parseInt(id))[0];
+
+  } catch (error) {
+      console.error(error.message)
+  }    
+};

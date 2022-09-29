@@ -5,11 +5,17 @@ import Grid  from '@mui/material/Grid';
 export default function ListMeasurers({measurers,handleClick}) {
  
   return (<>
-    <Grid  rowSpacing={3} justifyContent="center" columnSpacing={{ xs: 1, sm: 2, md: 4 }}>
+    <Grid  container
+          spacing={2}
+          justifyContent="center"
+          alignItems="stretch"
+    >
     {
-      measurers.map((measurer, key) =>
-        <CardMeasurer measurer={measurer} handleClickOpen={handleClick} key={key}/>  
-      )
+      measurers.map((measurer, key) =>(
+        <Grid item xs={4} sm={4}>
+          <CardMeasurer measurer={measurer} handleClickOpen={handleClick} key={key}/>
+        </Grid>  
+      ))
     }
     </Grid>
   </>)

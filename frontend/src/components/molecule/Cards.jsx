@@ -7,7 +7,7 @@ export default function CardMeasurer({measurer,handleClickOpen}) {
     const {nombre,descripcion} = measurer;
    
     return (<>
-    <Box sx={{maxWidth:225, mx:2, my:1}}>
+    <Box sx={{maxWidth:250, mx:1, my:1}}>
         <Paper elevation={3}>
             <Card >
                 <CardHeader 

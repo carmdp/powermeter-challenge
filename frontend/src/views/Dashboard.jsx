@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { GetMeasurerById } from 'controllers/powermeterController';
 import {SpinnerLine} from 'components/atom/Spinner';
 import ListMeasurers from 'components/organism/Lists';
-import GraphMedidor from 'components/molecule/Graph';
+import GraphMeasurer from 'components/molecule/Graph';
 import {Box,Button,Grid,Typography,Paper,Slide,Dialog,AppBar,Toolbar,IconButton}  from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import {MeasurersContext} from 'context/Contexts' 
@@ -60,6 +60,7 @@ export default function DashBoard() {
           <Typography sx={{fontSize:24,fontFamily: 'Oswald'}}>MEDIDORES</Typography>
         </Box>
         <ListMeasurers measurers={instant.medidores} handleClick={handleClickOpen} />
+       
         <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
           <AppBar sx={{ position: 'relative' }}>
             <Toolbar sx={{bgcolor:'#419f8d'}}>
@@ -69,7 +70,7 @@ export default function DashBoard() {
               <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">{`${instant.node.nombre} - ${measuring}`}</Typography>
             </Toolbar>
           </AppBar>  
-          <GraphMedidor name={instant.node.nombre} measurements={instant.data} typeMeasurements={measuring}/>
+          <GraphMeasurer name={instant.node.nombre} measurements={instant.data} typeMeasurements={measuring}/>
         </Dialog>
     </>)
   }

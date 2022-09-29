@@ -1,0 +1,50 @@
+[
+    {
+        "nombre": "Port SA",
+        "id": 1323,
+        "level_nombre": "empresa",
+        "level": 1,
+        "virtual": true,
+        "hijos": [
+            {
+                "nombre": "Buenos Aires",
+                "id": 1324,
+                "level_nombre": "zona",
+                "level": 2,
+                "virtual": true,
+                "hijos": [
+                    {
+                        "nombre": "Puerto",
+                        "id": 1325,
+                        "level_nombre": "localización",
+                        "level": 3,
+                        "virtual": true,
+                        "hijos": [
+                            {
+                                "nombre": "Administracion",
+                                "id": 1326,
+                                "level_nombre": "sublocalización",
+                                "level": 4,
+                                "virtual": false,
+                                "hijos": [],
+                                "parent": 1325
+                            },
+                            {
+                                "nombre": "Embarque",
+                                "id": 1327,
+                                "level_nombre": "sublocalización",
+                                "level": 4,
+                                "virtual": false,
+                                "hijos": [],
+                                "parent": 1325
+                            }
+                        ],
+                        "parent": 1324
+                    }
+                ],
+                "parent": 1323
+            }
+        ],
+        "parent": 487
+    }
+]
