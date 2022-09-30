@@ -21,7 +21,7 @@ export const Area = ({google, arre, options}) => {
 
       setChart(newChart);
     }
-  }, [google, chart]);
+  }, [google, chart, arre, options]);
 
   return (
     <>

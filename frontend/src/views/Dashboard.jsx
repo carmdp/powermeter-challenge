@@ -1,10 +1,9 @@
 import React, {useState, useEffect, useContext} from 'react';
 import { useParams } from "react-router-dom";
-import { GetMeasurerById } from 'controllers/measurersController';
 import {SpinnerLine} from 'components/atom/Spinner';
 import ListMeasurers from 'components/organism/Lists';
 import GraphMeasurer from 'components/molecule/Graph';
-import {Box,Button,Grid,Typography,Paper,Slide,Dialog,AppBar,Toolbar,IconButton}  from '@mui/material';
+import {Box,Typography,Slide,Dialog,AppBar,Toolbar,IconButton}  from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import {MeasurersContext} from 'context/Contexts' 
 
@@ -51,11 +50,11 @@ export default function DashBoard() {
           setLoading(false);
         }, 1000);
       })
-  },[params])
+  },[params, getMeasurer])
 
   if ( loading )
     return <SpinnerLine />
-console.log(instant)
+
   if (instant === null){
     return <Box sx={{ flexGrow: 1, py:8, px:4, height:'100vh'}}>{msgError.data.msg}</Box>
   }else{

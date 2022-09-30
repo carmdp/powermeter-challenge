@@ -1,6 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import {Card,CardHeader,CardMedia,CardActions,Typography, Paper, Box} from '@mui/material';
+import {Card,CardHeader,CardMedia,CardActions, Paper, Box} from '@mui/material';
 import {BtnPmCards} from 'components/atom/Buttons';
 
 /**

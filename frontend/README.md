@@ -25,6 +25,7 @@
 
 ### **_LIBRERIAS_**
 - React Router v6
+- Google Chart 
 
 
 [Desarrollado por Recalde Claudio](https:||cr.net.ar)

@@ -20,7 +20,7 @@ export default function ListMeasurers({measurers,handleClick}) {
     >
     {
       measurers.map((measurer, key) =>(
-        <Grid item xs={4} sm={4}>
+        <Grid item xs={4} sm={4} key={key}>
           <CardMeasurer measurer={measurer} handleClickOpen={handleClick} key={key}/>
         </Grid>  
       ))
