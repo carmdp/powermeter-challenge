@@ -1,6 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import {AppBar,Toolbar,Typography} from '@mui/material';
 
+/**
+ * 
+ * @param {*} dw 
+ * @param {*} children 
+ * @returns 
+ */
 const AppBarPm = ({dw, children}) => {
    
     return (<>

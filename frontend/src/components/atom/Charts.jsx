@@ -1,6 +1,13 @@
 import { useEffect, useState } from "react";
 import {Box,CssBaseline,Container} from '@mui/material';
 
+/**
+ * 
+ * @param {*} google 
+ * @param {*} arre 
+ * @param {*} options 
+ * @returns 
+ */
 export const Area = ({google, arre, options}) => {
   const [chart, setChart] = useState(null);
 

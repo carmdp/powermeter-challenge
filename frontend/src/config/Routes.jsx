@@ -5,6 +5,11 @@ import MeasurersProvider from 'context/MeasurersProvider'
 import App from 'views/App';
 import DashBoard from 'views/Dashboard';
 
+
+/**
+ * 
+ * @returns 
+ */
 export default function RoutePages() {
 
   return (<>

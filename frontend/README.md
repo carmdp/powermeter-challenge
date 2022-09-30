@@ -2,7 +2,8 @@
 
 # _FRONTEND - REACT_
 
-![](./src/assets/img/challenge.jpg)
+![](./src/assets/img/challenge1.jpg)
+![](./src/assets/img/challenge2.jpg)
 
 ### **_DIRECTORIOS_**
 - **src/assets**        //Carpeta de imagenes y estilos globales 

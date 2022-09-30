@@ -1,7 +1,10 @@
 import tree from '../data/tree.json';
 import measurements from '../data/measurements.json'; 
     
-
+/**
+ * 
+ * @returns 
+ */
 export const GetTreeCompany = async () => {
   try {
     return tree;
@@ -10,7 +13,11 @@ export const GetTreeCompany = async () => {
    }    
  };
 
- 
+ /**
+  * 
+  * @param {*} id 
+  * @returns 
+  */
 export const GetMeasurerById= async (id) => {
   try {
     return measurements.filter((measurement) => measurement.node.id === parseInt(id));
@@ -19,7 +26,11 @@ export const GetMeasurerById= async (id) => {
   }    
 };
  
-
+/**
+ * 
+ * @param {*} id 
+ * @returns 
+ */
 export const GetMeasurements = (id) => {
   try {
    

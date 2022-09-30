@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 
+
+/**
+ * 
+ * @returns 
+ */
 function useGoogleCharts () {
   const [google, setGoogle] = useState(null);
     

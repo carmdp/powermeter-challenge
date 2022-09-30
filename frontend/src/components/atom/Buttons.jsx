@@ -33,8 +33,16 @@ const styles ={
     }
 };
 
-export const BtnPmCards = (props) => {
-    const {text,variant,size,handleClick} = props;
+/**
+ * 
+ * @param {*} text 
+ * @param {*} variant 
+ * @param {*} size 
+ * @param {*} handleClick 
+ * @returns 
+ */
+export const BtnPmCards = ( {text,variant,size,handleClick} ) => {
+   
   
     return (<>
         <Button 

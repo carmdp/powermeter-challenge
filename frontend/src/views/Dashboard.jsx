@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useContext} from 'react';
 import { useParams } from "react-router-dom";
-import { GetMeasurerById } from 'controllers/powermeterController';
+import { GetMeasurerById } from 'controllers/measurersController';
 import {SpinnerLine} from 'components/atom/Spinner';
 import ListMeasurers from 'components/organism/Lists';
 import GraphMeasurer from 'components/molecule/Graph';
@@ -13,7 +13,11 @@ const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="left" ref={ref} {...props} />;
   });
 
-
+  
+/**
+ * 
+ * @returns 
+ */
 export default function DashBoard() {
   let params = useParams();
   const getMeasurer = useContext(MeasurersContext).measurer(params.id);
@@ -25,6 +29,7 @@ export default function DashBoard() {
   const [measuring,setMeasuring] = useState('kw');
 
   const handleClickOpen = (e) => {
+  console.log("OPEN", e)
     setMeasuring(e);
     setOpen(true);
   };

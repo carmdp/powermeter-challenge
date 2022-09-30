@@ -1,8 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import {MeasurersContext} from './Contexts';
-import { GetTreeCompany, GetMeasurerById } from 'controllers/powermeterController';
+import { GetTreeCompany, GetMeasurerById } from 'controllers/measurersController';
 
-
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
 const MeasurersProvider = ({children}) => {
     const [companies,setCompanies] = useState();
   

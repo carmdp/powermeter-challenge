@@ -6,6 +6,11 @@ import {Box,CssBaseline} from '@mui/material';
 import DrawerPm from 'components/molecule/Drawer';
 import AppBarPm from 'components/molecule/AppBar';
 
+
+/**
+ * 
+ * @returns 
+ */
 function App() {  
     const drawerWidth = 240;
 

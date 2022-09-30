@@ -1,7 +1,12 @@
 import React from 'react';
 import {Box,Drawer,Divider} from '@mui/material';
 
-
+/**
+ * 
+ * @param {*} dw 
+ * @param {*} children 
+ * @returns 
+ */
 const DrawerPm = ({dw, children}) => {
     
     return (<>

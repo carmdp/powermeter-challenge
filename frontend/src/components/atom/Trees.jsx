@@ -6,7 +6,10 @@ import {ExpandMore,ChevronRight,ElectricMeter} from '@mui/icons-material';
 import { TreeView,TreeItem  } from '@mui/lab';
 import './css/trees.css';
 
-
+/**
+ * 
+ * @returns 
+ */
 export default function TreeCompany(){
   
   //Obtenemos el listado de empresas
@@ -25,7 +28,12 @@ export default function TreeCompany(){
 
 }
 
-//Recorremos el arbol recursivamente
+
+/**
+ * Recorremos el arbol recursivamente
+ * @param {*} nodo 
+ * @returns 
+ */
 const Items = (nodo) => {
   
   if (nodo.hijos.length) {

@@ -4,10 +4,11 @@
       "paths": {
         "components": ["src/components"],
         "views": ["src/views"],
-        "controller": ["src/controllers"],
+        "controllers": ["src/controllers"],
         "context": ["src/context"],
         "config":["src/config"],
-        "css":["src/assets/css"]
+        "css":["src/assets/css"],
+        "hooks":["src/hooks"]
       }
     },
     "include": ["src"],
