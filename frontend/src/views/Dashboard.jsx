@@ -55,8 +55,7 @@ export default function DashBoard() {
 
   if ( loading )
     return <SpinnerLine />
-
-    
+console.log(instant)
   if (instant === null){
     return <Box sx={{ flexGrow: 1, py:8, px:4, height:'100vh'}}>{msgError.data.msg}</Box>
   }else{
@@ -72,7 +71,7 @@ export default function DashBoard() {
               <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
                 <CloseIcon />
               </IconButton>
-              <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">{`${instant.node.nombre} - ${measuring}`}</Typography>
+              <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">{`${instant.node.nombre} - ${measuring.measurement}`}</Typography>
             </Toolbar>
           </AppBar>  
           <GraphMeasurer name={instant.node.nombre} measurements={instant.data} typeMeasurements={measuring}/>
