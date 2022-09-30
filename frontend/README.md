@@ -16,6 +16,15 @@
 - **src/views** ||  Vistas paginas
 - **src/data**  ||  Archivos JSON con datos pruebas
 
+### **_TECNOLOGIAS_**
+- JAVASCRIPT
+
+### **_FRAMEWORKS_**
+- ReactJs
+- @MUI
+
+### **_LIBRERIAS_**
+- React Router v6
 
 
 [Desarrollado por Recalde Claudio](https:||cr.net.ar)
